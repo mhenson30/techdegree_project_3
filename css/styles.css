@@ -19,7 +19,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 input[type="text"],
-[type="textarea"],
+textarea,
 select {
     background: rgba(255,255,255,0.1);
     border: 0px solid;
@@ -35,7 +35,7 @@ select {
     margin-bottom: 20px;
 }
 
-[type="textarea"]{
+textarea{
     height: 100px;
 }
 
@@ -46,7 +46,7 @@ select{
 fieldset{
     border: none;
 }
-h2, h1, p, legend, label, [placeholder], button{
+h2, h1, p, legend, label, [placeholder], button, span{
     
     font-family: 'Merriweather', serif;
     color: #2d3945;
@@ -149,7 +149,7 @@ label:last-of-type, label:nth-last-of-type(2){
     padding-top: 15px;
 }
 
-input:focus{
+input:focus, textarea:focus{
     border: 2px solid #2d3945;
     background-color: #FFF1CD;
     transition: ease .6s;
@@ -160,6 +160,13 @@ body{
     background-color: #A6D3FF;
 }
 
+span.legend{ 
+    display: none;
+}
+
+.fld_heading{
+    margin-top: 0;
+}
 
 
 
