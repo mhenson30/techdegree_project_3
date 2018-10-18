@@ -73,7 +73,7 @@ legend{
     font-size: 1.5em;
 }
 
-[placeholder]{
+[placeholder], input{
     font-style: italic;
     text-align: right;
     font-weight: 300;
@@ -149,6 +149,17 @@ label:last-of-type, label:nth-last-of-type(2){
     padding-top: 15px;
 }
 
+input:focus{
+    border: 2px solid #2d3945;
+    background-color: #FFF1CD;
+    transition: ease .6s;
+    
+}
+
+body{
+    background-color: #A6D3FF;
+}
+
 
 
 
@@ -172,7 +183,6 @@ label:last-of-type, label:nth-last-of-type(2){
     
     .contact div{
         display: flex;
-        flex: 1;
     }
     
     .contact div label{
@@ -182,4 +192,5 @@ label:last-of-type, label:nth-last-of-type(2){
     .contact div input{
         width: 70%;
     }
+    
 }
